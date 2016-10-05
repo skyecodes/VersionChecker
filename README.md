@@ -1,6 +1,6 @@
 # VersionChecker
 
-Unofficial 1.10.2 port of the VersionChecker mod for Minecraft.
+Unofficial 1.10.2 port of the VersionChecker mod for Minecraft, created by Dynious.
 
 Downloads can be found in the "Releases" section.
 
