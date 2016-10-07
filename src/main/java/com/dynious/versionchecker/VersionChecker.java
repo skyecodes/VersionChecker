@@ -37,7 +37,7 @@ public class VersionChecker
     {
         MinecraftForge.EVENT_BUS.register(new EventHandler());
 
-        FMLCommonHandler.instance().bus().register(new ConfigHandler());
+        MinecraftForge.EVENT_BUS.register(new ConfigHandler());
 
         ConfigHandler.init(event);
 

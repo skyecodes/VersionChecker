@@ -6,6 +6,7 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigHandler
@@ -14,7 +15,7 @@ public class ConfigHandler
 
     public static void init(FMLPreInitializationEvent event)
     {
-        FMLCommonHandler.instance().bus().register(new ConfigHandler());
+        MinecraftForge.EVENT_BUS.register(new ConfigHandler());
         configFile = new Configuration(event.getSuggestedConfigurationFile());
         syncConfig();
     }
